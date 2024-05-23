@@ -10,7 +10,8 @@ class LoginScreenController extends GetxController {
   TextEditingController userController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   ApiConnect _connect = Get.put(ApiConnect());
-  var token = 'a518bb72fa7cb66a826d80650ca669eeaf73c527';
+
+  var token = 'dad7a92b797d37f8858b5c2127aa4bffe9a91820';
 
   @override
   void onInit() {
