@@ -1,15 +1,14 @@
 import 'package:get/get.dart';
+import 'package:quantzi/Routes/AppRoutes.dart';
 import '../ApiConnect.dart';
 import '../Component/MenuProvider.dart';
 import '../ResponseModel/MoviesListResponse.dart';
 
 class HomeScreenController extends GetxController {
   late MenuProvider userDataProvider;
-
   ApiConnect _connect = Get.put(ApiConnect());
   RxBool isLoading = RxBool(false);
   RxList<Results> moviesData = RxList();
-
   @override
   void onInit() {
     getMovies();
@@ -23,6 +22,7 @@ class HomeScreenController extends GetxController {
     print('getMovies:${response.toJson()}');
     if (response != null) {
       moviesData.value = response.results!;
+      // Get.offNamed(AppRoutes.login.toName);
     } else {}
   }
 }
