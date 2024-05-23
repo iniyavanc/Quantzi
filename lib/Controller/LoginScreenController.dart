@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:quantzi/UI/HomeScreen.dart';
 
 import '../ApiConnect.dart';
+import '../Routes/AppRoutes.dart';
 
 class LoginScreenController extends GetxController {
   TextEditingController userController = TextEditingController();
@@ -57,6 +58,8 @@ class LoginScreenController extends GetxController {
         backgroundColor: Colors.black,
         textColor: Colors.white,
       );
+
+      // Get.offNamed(AppRoutes.h.toName);
 
       Navigator.pushReplacement(
         context,
