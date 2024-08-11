@@ -7,3 +7,11 @@ class LoginBinding extends Bindings {
     Get.lazyPut<LoginScreenController>(() => LoginScreenController());
   }
 }
+
+// class Loginbinding extends Bindings{
+//   @override
+//   void dependencies() {
+//     Get.lazyPut<LoginScreenController>(() =>LoginScreenController());
+//   }
+//
+// }

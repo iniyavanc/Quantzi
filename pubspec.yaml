@@ -39,6 +39,12 @@ dependencies:
   get: ^4.6.6
   fluttertoast: ^8.2.5
   video_player: ^2.8.6
+  flutter_swipe_button: ^2.1.1+1
+  slider_action: ^1.0.1
+  quickalert: ^1.1.0
+  action_slider: ^0.7.0
+  ticker_text: ^2.0.0
+  multi_dropdown: ^2.1.4
 
 
 

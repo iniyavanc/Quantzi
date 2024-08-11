@@ -58,12 +58,10 @@ class LoginScreenController extends GetxController {
         backgroundColor: Colors.black,
         textColor: Colors.white,
       );
-
       // Get.offNamed(AppRoutes.h.toName);
-
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
       );
       passwordController.text = "";
       userController.text = "";

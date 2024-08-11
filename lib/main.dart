@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'Component/MenuProvider.dart';
 import 'Routes/AppPages.dart';
 import 'Routes/AppRoutes.dart';
+import 'UI/ListScreen.dart';
 import 'UI/LoginScreen.dart';
 
 void main() {
@@ -18,9 +19,10 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Color(0xFF263E60),
       systemNavigationBarIconBrightness: Brightness.light,
     ));
@@ -31,9 +33,9 @@ class MyApp extends StatelessWidget {
         textSelectionTheme:
             TextSelectionThemeData(selectionHandleColor: Colors.transparent),
       ),
-      home: const LoginScreen(),
-      initialRoute: AppRoutes.root.toName,
-      getPages: AppPages.list,
+      home: ListScreen(),
+      // initialRoute: AppRoutes.root.toName,
+      // getPages: AppPages.list,
     );
   }
 }

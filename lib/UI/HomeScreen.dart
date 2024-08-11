@@ -16,8 +16,10 @@ class HomeScreen extends GetView<HomeScreenController> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     HomeScreenController controller = Get.put(HomeScreenController());
+
     controller.userDataProvider =
         Provider.of<MenuProvider>(context, listen: false);
+
     return Scaffold(
         backgroundColor: Color(0xFF0D111C),
         appBar: AppBar(

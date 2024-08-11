@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-
 import 'ResponseModel/LoginResponse.dart';
 import 'ResponseModel/MoviesListResponse.dart';
 
